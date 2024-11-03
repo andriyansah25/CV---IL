@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Latar belakang gelap */
+    color: #ffffff; /* Teks putih */
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #1e1e1e; /* Warna navbar gelap */
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Bayangan halus */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db; /* Warna latar belakang saat hover */
+    color: #ffffff; /* Teks putih saat hover */
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #1e1e1e; /* Latar belakang gelap untuk section */
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Bayangan lebih gelap */
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1); /* Bayangan halus */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Teks putih */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff; /* Teks putih */
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #ffffff; /* Teks putih */
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+section#about p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #b0b0b0; /* Teks abu-abu muda */
+    line-height: 1.8;
+}
+
+/* Project & Skills Styling */
+section#projects .project, section#skills .skill-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #2c3e50; /* Warna gelap untuk project/skill */
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan lebih gelap */
+}
+
+section#experience .experience, section#experience .experience-item,
+section#contact .contact, section#contact .contact-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #2c3e50; /* Warna gelap untuk experience/contact */
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan lebih gelap */
+}
+
+section#experience .experience:hover, section#experience .experience-item:hover,
+section#contact .contact:hover, section#contact .contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Bayangan lebih gelap saat hover */
+}
+
+section#projects .project:hover, section#skills .skill-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Bayangan lebih gelap saat hover */
+}
+
+/* Link Styling */
+a {
+    color: #3498db; /* Tautan biru */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ecf0f1; /* Tautan putih saat hover */
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
